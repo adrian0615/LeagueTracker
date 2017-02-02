@@ -30,25 +30,30 @@ class Game : Equatable {
     }
     
     
-    func scoringPlay(team: Team, score: Int) -> Game {
-        let game: Game = Game(homeTeam: homeTeam, awayTeam: awayTeam, homeTeamScore: homeTeamScore, awayTeamScore: awayTeamScore)
-        var totalScore: Int = 0
+    func determineRecord(game: Game) -> Game {
+        let newGame = game
         
-        if team == homeTeam {
-            totalScore = homeTeamScore + score
-            game.homeTeamScore = totalScore
-            return game
-        } else if team == awayTeam {
-            totalScore = awayTeamScore + score
-            game.awayTeamScore = totalScore
-            return game
+        guard newGame.homeTeamScore != newGame.awayTeamScore else {
+            fatalError()
         }
-        return game
+        
+        if newGame.homeTeamScore > newGame.awayTeamScore {
+            newGame.homeTeam.wins += 1
+            newGame.awayTeam.losses += 1
+            
+        } else {
+            
+            newGame.homeTeam.losses += 1
+            newGame.awayTeam.wins += 1
+        }
+        
+        
+        return newGame
     }
-    
-    
-
 }
+
+
+
 
 
 

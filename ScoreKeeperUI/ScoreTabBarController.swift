@@ -12,6 +12,9 @@ class ScoreTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Playoff Chase"
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

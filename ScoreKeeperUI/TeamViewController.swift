@@ -1,17 +1,28 @@
 //
-//  GameEditViewController.swift
+//  TeamViewController.swift
 //  ScoreKeeperUI
 //
-//  Created by Adrian McDaniel on 1/18/17.
+//  Created by Adrian McDaniel on 2/1/17.
 //  Copyright © 2017 dssafsfsd. All rights reserved.
 //
 
 import UIKit
 
-class GameEditViewController: UIViewController {
+class TeamViewController: UIViewController {
+    
+    var team: Team? = nil
 
+    @IBOutlet var teamNameLabel: UILabel!
+    @IBOutlet var teamWinsLabel: UILabel!
+    @IBOutlet var teamLosesLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Team Record"
+        
+        teamNameLabel.text = team?.name
+        teamWinsLabel.text = "Wins: \(team!.wins)"
+        teamLosesLabel.text = "Losses: \(team!.losses)"
 
         // Do any additional setup after loading the view.
     }

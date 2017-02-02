@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074B8CAC1E42B36E000B76BA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B8CAB1E42B36E000B76BA /* Game.swift */; };
+		074B8CB01E42BE6C000B76BA /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B8CAF1E42BE6C000B76BA /* Standings.swift */; };
+		074B8CB21E42D9B7000B76BA /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B8CB11E42D9B7000B76BA /* TeamViewController.swift */; };
 		07915B7B1E2EAD85008A06B9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B7A1E2EAD85008A06B9 /* Team.swift */; };
-		07915B7D1E2EB2B0008A06B9 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B7C1E2EB2AF008A06B9 /* JSON.swift */; };
-		07915B7F1E2EB45E008A06B9 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B7E1E2EB45E008A06B9 /* Records.swift */; };
 		07915B811E2EEC2F008A06B9 /* RecordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B801E2EEC2F008A06B9 /* RecordsTests.swift */; };
 		07915B831E2F8C87008A06B9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B821E2F8C87008A06B9 /* GameViewController.swift */; };
-		07915B851E2F8CA1008A06B9 /* GameEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B841E2F8CA1008A06B9 /* GameEditViewController.swift */; };
 		07915B871E2F8E47008A06B9 /* StandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B861E2F8E47008A06B9 /* StandingsViewController.swift */; };
 		07915B891E2F8EA2008A06B9 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B881E2F8EA2008A06B9 /* GamesViewController.swift */; };
-		07915B8B1E2F8EEA008A06B9 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B8A1E2F8EEA008A06B9 /* RecordViewController.swift */; };
 		07915B8D1E2F91AC008A06B9 /* GameAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B8C1E2F91AC008A06B9 /* GameAddViewController.swift */; };
 		07FFA1E11E2E860700D4D7F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1E01E2E860700D4D7F3 /* AppDelegate.swift */; };
 		07FFA1E31E2E860700D4D7F3 /* ScoreTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1E21E2E860700D4D7F3 /* ScoreTabBarController.swift */; };
@@ -23,7 +22,6 @@
 		07FFA1E81E2E860700D4D7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA1E71E2E860700D4D7F3 /* Assets.xcassets */; };
 		07FFA1EB1E2E860700D4D7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFA1E91E2E860700D4D7F3 /* LaunchScreen.storyboard */; };
 		07FFA1F61E2E860700D4D7F3 /* ScoreKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA1F51E2E860700D4D7F3 /* ScoreKeeperUITests.swift */; };
-		07FFA2031E2E8DBD00D4D7F3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA2021E2E8DBD00D4D7F3 /* Game.swift */; };
 		07FFA2051E2E918900D4D7F3 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFA2041E2E918900D4D7F3 /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,15 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074B8CAB1E42B36E000B76BA /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		074B8CAF1E42BE6C000B76BA /* Standings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
+		074B8CB11E42D9B7000B76BA /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		07915B7A1E2EAD85008A06B9 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		07915B7C1E2EB2AF008A06B9 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		07915B7E1E2EB45E008A06B9 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		07915B801E2EEC2F008A06B9 /* RecordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsTests.swift; sourceTree = "<group>"; };
 		07915B821E2F8C87008A06B9 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		07915B841E2F8CA1008A06B9 /* GameEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEditViewController.swift; sourceTree = "<group>"; };
 		07915B861E2F8E47008A06B9 /* StandingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandingsViewController.swift; sourceTree = "<group>"; };
 		07915B881E2F8EA2008A06B9 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
-		07915B8A1E2F8EEA008A06B9 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		07915B8C1E2F91AC008A06B9 /* GameAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAddViewController.swift; sourceTree = "<group>"; };
 		07FFA1DD1E2E860700D4D7F3 /* ScoreKeeperUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreKeeperUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFA1E01E2E860700D4D7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		07FFA1F11E2E860700D4D7F3 /* ScoreKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFA1F51E2E860700D4D7F3 /* ScoreKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreKeeperUITests.swift; sourceTree = "<group>"; };
 		07FFA1F71E2E860700D4D7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07FFA2021E2E8DBD00D4D7F3 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../Game.swift; sourceTree = "<group>"; };
 		07FFA2041E2E918900D4D7F3 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,18 +98,16 @@
 			isa = PBXGroup;
 			children = (
 				07FFA1E01E2E860700D4D7F3 /* AppDelegate.swift */,
-				07FFA2021E2E8DBD00D4D7F3 /* Game.swift */,
-				07915B7A1E2EAD85008A06B9 /* Team.swift */,
-				07915B7E1E2EB45E008A06B9 /* Records.swift */,
 				07FFA1E41E2E860700D4D7F3 /* Main.storyboard */,
 				07FFA1E21E2E860700D4D7F3 /* ScoreTabBarController.swift */,
 				07915B881E2F8EA2008A06B9 /* GamesViewController.swift */,
-				07915B8C1E2F91AC008A06B9 /* GameAddViewController.swift */,
 				07915B821E2F8C87008A06B9 /* GameViewController.swift */,
-				07915B841E2F8CA1008A06B9 /* GameEditViewController.swift */,
+				07915B8C1E2F91AC008A06B9 /* GameAddViewController.swift */,
 				07915B861E2F8E47008A06B9 /* StandingsViewController.swift */,
-				07915B8A1E2F8EEA008A06B9 /* RecordViewController.swift */,
-				07915B7C1E2EB2AF008A06B9 /* JSON.swift */,
+				074B8CB11E42D9B7000B76BA /* TeamViewController.swift */,
+				074B8CAB1E42B36E000B76BA /* Game.swift */,
+				07915B7A1E2EAD85008A06B9 /* Team.swift */,
+				074B8CAF1E42BE6C000B76BA /* Standings.swift */,
 				07FFA1E71E2E860700D4D7F3 /* Assets.xcassets */,
 				07FFA1E91E2E860700D4D7F3 /* LaunchScreen.storyboard */,
 				07FFA1EC1E2E860700D4D7F3 /* Info.plist */,
@@ -238,15 +232,13 @@
 				07915B8D1E2F91AC008A06B9 /* GameAddViewController.swift in Sources */,
 				07915B831E2F8C87008A06B9 /* GameViewController.swift in Sources */,
 				07915B7B1E2EAD85008A06B9 /* Team.swift in Sources */,
+				074B8CAC1E42B36E000B76BA /* Game.swift in Sources */,
 				07915B871E2F8E47008A06B9 /* StandingsViewController.swift in Sources */,
-				07915B7D1E2EB2B0008A06B9 /* JSON.swift in Sources */,
+				074B8CB01E42BE6C000B76BA /* Standings.swift in Sources */,
 				07915B891E2F8EA2008A06B9 /* GamesViewController.swift in Sources */,
-				07915B8B1E2F8EEA008A06B9 /* RecordViewController.swift in Sources */,
 				07FFA1E31E2E860700D4D7F3 /* ScoreTabBarController.swift in Sources */,
-				07FFA2031E2E8DBD00D4D7F3 /* Game.swift in Sources */,
 				07FFA1E11E2E860700D4D7F3 /* AppDelegate.swift in Sources */,
-				07915B851E2F8CA1008A06B9 /* GameEditViewController.swift in Sources */,
-				07915B7F1E2EB45E008A06B9 /* Records.swift in Sources */,
+				074B8CB21E42D9B7000B76BA /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

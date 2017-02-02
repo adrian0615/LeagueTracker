@@ -11,14 +11,20 @@ import Foundation
 
 class Team : Equatable {
     public static func == (lhs: Team, rhs: Team) -> Bool {
-        return lhs.name == rhs.name 
+        return lhs.name == rhs.name && lhs.wins == rhs.wins && lhs.losses == rhs.losses
     }
     
-    var name: String
-
+    let name: String
+    var wins: Int
+    var losses: Int
     
-    init(name: String) {
+    
+    init(name: String, wins: Int, losses: Int) {
         self.name = name
+        self.wins = wins
+        self.losses = losses
         
     }
+
+    
 }
