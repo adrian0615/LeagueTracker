@@ -13,6 +13,7 @@ class StandingsViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet var standingsTableView: UITableView!
     
     var games: [Game] = []
+    var gameStore = GameStore()
     
     var records = Records(teams: [])
     
@@ -60,8 +61,8 @@ class StandingsViewController: UIViewController, UITableViewDelegate, UITableVie
         title = "Playoff Rankings"
         
         let gamesVC = self.storyboard!.instantiateViewController(withIdentifier: "GamesView") as! GamesViewController
-        
-        games = gamesVC.games
+        gameStore = gamesVC.gameStore
+        games = gameStore.fetchGames()
         
         update()
         

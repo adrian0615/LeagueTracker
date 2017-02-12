@@ -24,13 +24,5 @@ class Records {
     }
     
     
-    func computeStandings(teams: [Team]) -> [Team] {
-        let sorted = teams.sorted { $0.wins == $1.wins ? $0.losses < $1.losses : $0.wins > $1.wins }
-        
-        return sorted
-        
-    }
-    
-    
     
 }

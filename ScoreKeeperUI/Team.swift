@@ -25,6 +25,17 @@ class Team : Equatable {
         self.losses = losses
         
     }
-
+    
+    convenience init?(jsonObject: [String: Any]) {
+        
+        guard let teamName = jsonObject["name"] as? String,
+        let teamWins = jsonObject["wins"] as? Int,
+            let teamLosses = jsonObject["losses"] as? Int else {
+                return nil
+        }
+        
+        self.init(name: teamName, wins: teamWins, losses: teamLosses)
+    }
+    
     
 }

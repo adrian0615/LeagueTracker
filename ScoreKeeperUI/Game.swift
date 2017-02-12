@@ -29,6 +29,18 @@ class Game : Equatable {
         self.awayTeamScore = awayTeamScore
     }
     
+    convenience init?(jsonObject: [String: Any]) {
+        
+        
+        guard let gameHomeTeam = Team.init(jsonObject: jsonObject["homeTeam"] as! [String : Any]),
+            let gameAwayTeam = Team.init(jsonObject: jsonObject["awayTeam"] as! [String : Any]),
+            let gameHomeTeamScore = jsonObject["homeTeamScore"] as? Int,
+            let gameAwayTeamScore = jsonObject["awayTeamScore"] as? Int else {
+                return nil
+        }
+        self.init(homeTeam: gameHomeTeam, awayTeam: gameAwayTeam, homeTeamScore: gameHomeTeamScore, awayTeamScore: gameAwayTeamScore)
+    }
+    
     
     func determineRecord(game: Game) -> Game {
         let newGame = game
@@ -50,7 +62,10 @@ class Game : Equatable {
         
         return newGame
     }
+    
 }
+
+
 
 
 

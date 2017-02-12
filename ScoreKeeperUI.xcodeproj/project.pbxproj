@@ -10,6 +10,7 @@
 		074B8CAC1E42B36E000B76BA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B8CAB1E42B36E000B76BA /* Game.swift */; };
 		074B8CB01E42BE6C000B76BA /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B8CAF1E42BE6C000B76BA /* Standings.swift */; };
 		074B8CB21E42D9B7000B76BA /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B8CB11E42D9B7000B76BA /* TeamViewController.swift */; };
+		076E91601E50BEE300E61894 /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076E915F1E50BEE300E61894 /* GameStore.swift */; };
 		07915B7B1E2EAD85008A06B9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B7A1E2EAD85008A06B9 /* Team.swift */; };
 		07915B811E2EEC2F008A06B9 /* RecordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B801E2EEC2F008A06B9 /* RecordsTests.swift */; };
 		07915B831E2F8C87008A06B9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07915B821E2F8C87008A06B9 /* GameViewController.swift */; };
@@ -39,6 +40,7 @@
 		074B8CAB1E42B36E000B76BA /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		074B8CAF1E42BE6C000B76BA /* Standings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
 		074B8CB11E42D9B7000B76BA /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		076E915F1E50BEE300E61894 /* GameStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
 		07915B7A1E2EAD85008A06B9 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		07915B801E2EEC2F008A06B9 /* RecordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsTests.swift; sourceTree = "<group>"; };
 		07915B821E2F8C87008A06B9 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				07915B8C1E2F91AC008A06B9 /* GameAddViewController.swift */,
 				07915B861E2F8E47008A06B9 /* StandingsViewController.swift */,
 				074B8CB11E42D9B7000B76BA /* TeamViewController.swift */,
+				076E915F1E50BEE300E61894 /* GameStore.swift */,
 				074B8CAB1E42B36E000B76BA /* Game.swift */,
 				07915B7A1E2EAD85008A06B9 /* Team.swift */,
 				074B8CAF1E42BE6C000B76BA /* Standings.swift */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07915B8D1E2F91AC008A06B9 /* GameAddViewController.swift in Sources */,
+				076E91601E50BEE300E61894 /* GameStore.swift in Sources */,
 				07915B831E2F8C87008A06B9 /* GameViewController.swift in Sources */,
 				07915B7B1E2EAD85008A06B9 /* Team.swift in Sources */,
 				074B8CAC1E42B36E000B76BA /* Game.swift in Sources */,

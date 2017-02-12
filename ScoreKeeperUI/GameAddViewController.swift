@@ -9,8 +9,9 @@
 import UIKit
 
 class GameAddViewController: UIViewController {
-    
+    var games: [Game] = []
     var game: Game? = nil
+    var gameStore = GameStore()
 
     @IBOutlet var homeNameField: UITextField!
     
@@ -26,14 +27,12 @@ class GameAddViewController: UIViewController {
         
         let updatedGame = game?.determineRecord(game: self.game!)
         
+        games.append(updatedGame!)
+        
         let gamesVC = self.storyboard!.instantiateViewController(withIdentifier: "GamesView") as! GamesViewController
         
-        let standingsVC = self.storyboard!.instantiateViewController(withIdentifier: "StandingsView") as! StandingsViewController
         
-        gamesVC.games.append(updatedGame!)
-        
-        standingsVC.records.teams.append((updatedGame!.homeTeam))
-        standingsVC.records.teams.append((updatedGame!.awayTeam))
+        gameStore.postGames(games: games)
         
         
         self.navigationController?.pushViewController(gamesVC, animated:

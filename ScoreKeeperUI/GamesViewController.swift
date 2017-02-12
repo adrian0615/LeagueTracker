@@ -9,8 +9,8 @@
 import UIKit
 
 class GamesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    var games = [Game(homeTeam: Team(name: "Falcons", wins: 4, losses: 0), awayTeam: Team(name: "Patriots", wins: 3, losses: 1), homeTeamScore: 28, awayTeamScore: 17), Game(homeTeam: Team(name: "Packers", wins: 2, losses: 2), awayTeam: Team(name: "Steelers", wins: 3, losses: 2), homeTeamScore: 20, awayTeamScore: 21), Game(homeTeam: Team(name: "Seahawks", wins: 1, losses: 3), awayTeam: Team(name: "Texans", wins: 3, losses: 2), homeTeamScore: 3, awayTeamScore: 22)]
+    let gameStore = GameStore()
+    var games: [Game] = []
     
     
 
@@ -59,6 +59,9 @@ class GamesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let gameAddVC = self.storyboard!.instantiateViewController(withIdentifier: "GameAddView") as! GameAddViewController
         
+        gameAddVC.gameStore = gameStore
+        gameAddVC.games = games
+        
         self.navigationController?.pushViewController(gameAddVC, animated:
             true)
     }
@@ -71,7 +74,8 @@ class GamesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         title = "Playoff Chase"
         
-        
+        games = gameStore.fetchGames()
+        update()
         gamesTableView.delegate = self
         gamesTableView.dataSource = self
         
